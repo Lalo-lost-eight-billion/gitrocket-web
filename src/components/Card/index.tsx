@@ -31,7 +31,13 @@ const Card = ({
       <S.Name>{clubName}</S.Name>
 
       <S.ImageWrap>
-        <Img src={clubImage} width={224} height={85} alt="image" />
+        <Img
+          src={clubImage}
+          width={224}
+          height={85}
+          customStyle={S.StyledImage}
+          alt="image"
+        />
         <S.ImageFilter />
       </S.ImageWrap>
 
@@ -39,7 +45,7 @@ const Card = ({
         $width={"100%"}
         $height={"50%"}
         $rowGap={"7px"}
-        $padding={"13px 17px"}
+        $padding={"15px 17px"}
       >
         {priceList.map((item, idx) => (
           <S.Text key={idx} $priceType={item}>

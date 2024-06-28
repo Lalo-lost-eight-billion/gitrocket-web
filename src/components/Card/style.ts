@@ -1,5 +1,5 @@
 import { palette } from "@/styles/palette";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const CardBox = styled.div`
   width: 224px;
@@ -20,6 +20,10 @@ export const ImageWrap = styled.div`
   position: relative;
 `;
 
+export const StyledImage = css`
+  object-fit: cover;
+`;
+
 export const Name = styled.p`
   font-size: 18px;
   font-family: "Pretendard-Bold" !important;
@@ -34,7 +38,7 @@ export const Name = styled.p`
 
 export const ImageFilter = styled.div`
   width: 100%;
-  height: 100%;
+  height: 85px;
 
   position: absolute;
   top: 0;
