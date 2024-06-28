@@ -1,7 +1,7 @@
 export const REGISTED_CLUB_STOKE_ITMES = [
   {
     clubName: "B1ND",
-    clubImage: "/images/minoru.png",
+    clubImage: "/images/b1nd.png",
     price: {
       종가: "87,849,000",
       고가: "88,249,000",
@@ -10,7 +10,7 @@ export const REGISTED_CLUB_STOKE_ITMES = [
   },
   {
     clubName: "CNS",
-    clubImage: "/images/minoru.png",
+    clubImage: "/images/cns.png",
     price: {
       종가: "87,849,000",
       고가: "88,249,000",
@@ -19,7 +19,7 @@ export const REGISTED_CLUB_STOKE_ITMES = [
   },
   {
     clubName: "DUCAMI",
-    clubImage: "/images/minoru.png",
+    clubImage: "/images/ducami.png",
     price: {
       종가: "87,849,000",
       고가: "88,249,000",
@@ -28,7 +28,7 @@ export const REGISTED_CLUB_STOKE_ITMES = [
   },
   {
     clubName: "ALT",
-    clubImage: "/images/minoru.png",
+    clubImage: "/images/alt.png",
     price: {
       종가: "87,849,000",
       고가: "88,249,000",
@@ -37,7 +37,7 @@ export const REGISTED_CLUB_STOKE_ITMES = [
   },
   {
     clubName: "DLC",
-    clubImage: "/images/minoru.png",
+    clubImage: "/images/ralo.jpeg",
     price: {
       종가: "87,849,000",
       고가: "88,249,000",
@@ -46,7 +46,7 @@ export const REGISTED_CLUB_STOKE_ITMES = [
   },
   {
     clubName: "모디",
-    clubImage: "/images/minoru.png",
+    clubImage: "/images/modi.png",
     price: {
       종가: "87,849,000",
       고가: "88,249,000",
@@ -55,7 +55,7 @@ export const REGISTED_CLUB_STOKE_ITMES = [
   },
   {
     clubName: "inD",
-    clubImage: "/images/minoru.png",
+    clubImage: "/images/ralo.jpeg",
     price: {
       종가: "87,849,000",
       고가: "88,249,000",
@@ -64,7 +64,7 @@ export const REGISTED_CLUB_STOKE_ITMES = [
   },
   {
     clubName: "Connect",
-    clubImage: "/images/minoru.png",
+    clubImage: "/images/ralo.jpeg",
     price: {
       종가: "87,849,000",
       고가: "88,249,000",
@@ -73,7 +73,7 @@ export const REGISTED_CLUB_STOKE_ITMES = [
   },
   {
     clubName: "8bit",
-    clubImage: "/images/minoru.png",
+    clubImage: "/images/ralo.jpeg",
     price: {
       종가: "87,849,000",
       고가: "88,249,000",
@@ -82,7 +82,7 @@ export const REGISTED_CLUB_STOKE_ITMES = [
   },
   {
     clubName: "삼디",
-    clubImage: "/images/minoru.png",
+    clubImage: "/images/ralo.jpeg",
     price: {
       종가: "87,849,000",
       고가: "88,249,000",
@@ -94,7 +94,7 @@ export const REGISTED_CLUB_STOKE_ITMES = [
 export const INQUIRED_CLUB_STOKE_ITEMS = [
   {
     clubName: "B1ND",
-    clubImage: "/images/minoru.png",
+    clubImage: "/images/b1nd.png",
     price: {
       종가: "87,849,000",
       고가: "88,249,000",
@@ -103,7 +103,7 @@ export const INQUIRED_CLUB_STOKE_ITEMS = [
   },
   {
     clubName: "CNS",
-    clubImage: "/images/minoru.png",
+    clubImage: "/images/cns.png",
     price: {
       종가: "87,849,000",
       고가: "88,249,000",
@@ -112,7 +112,7 @@ export const INQUIRED_CLUB_STOKE_ITEMS = [
   },
   {
     clubName: "DUCAMI",
-    clubImage: "/images/minoru.png",
+    clubImage: "/images/ducami.png",
     price: {
       종가: "87,849,000",
       고가: "88,249,000",
@@ -121,7 +121,7 @@ export const INQUIRED_CLUB_STOKE_ITEMS = [
   },
   {
     clubName: "ALT",
-    clubImage: "/images/minoru.png",
+    clubImage: "/images/alt.png",
     price: {
       종가: "87,849,000",
       고가: "88,249,000",
@@ -130,7 +130,7 @@ export const INQUIRED_CLUB_STOKE_ITEMS = [
   },
   {
     clubName: "DLC",
-    clubImage: "/images/minoru.png",
+    clubImage: "/images/ralo.jpeg",
     price: {
       종가: "87,849,000",
       고가: "88,249,000",
@@ -142,7 +142,7 @@ export const INQUIRED_CLUB_STOKE_ITEMS = [
 export const INCREASE_CLUB_STOKE_ITMES = [
   {
     clubName: "B1ND",
-    clubImage: "/images/minoru.png",
+    clubImage: "/images/b1nd.png",
     price: {
       종가: "87,849,000",
       고가: "88,249,000",
@@ -151,7 +151,7 @@ export const INCREASE_CLUB_STOKE_ITMES = [
   },
   {
     clubName: "CNS",
-    clubImage: "/images/minoru.png",
+    clubImage: "/images/cns.png",
     price: {
       종가: "87,849,000",
       고가: "88,249,000",
@@ -160,7 +160,7 @@ export const INCREASE_CLUB_STOKE_ITMES = [
   },
   {
     clubName: "DUCAMI",
-    clubImage: "/images/minoru.png",
+    clubImage: "/images/ducami.png",
     price: {
       종가: "87,849,000",
       고가: "88,249,000",
@@ -169,7 +169,7 @@ export const INCREASE_CLUB_STOKE_ITMES = [
   },
   {
     clubName: "ALT",
-    clubImage: "/images/minoru.png",
+    clubImage: "/images/alt.png",
     price: {
       종가: "87,849,000",
       고가: "88,249,000",
@@ -178,7 +178,7 @@ export const INCREASE_CLUB_STOKE_ITMES = [
   },
   {
     clubName: "DLC",
-    clubImage: "/images/minoru.png",
+    clubImage: "/images/ralo.jpeg",
     price: {
       종가: "87,849,000",
       고가: "88,249,000",
@@ -190,7 +190,7 @@ export const INCREASE_CLUB_STOKE_ITMES = [
 export const DECREASE_CLUB_STOKE_ITMES = [
   {
     clubName: "B1ND",
-    clubImage: "/images/minoru.png",
+    clubImage: "/images/b1nd.png",
     price: {
       종가: "87,849,000",
       고가: "88,249,000",
@@ -199,7 +199,7 @@ export const DECREASE_CLUB_STOKE_ITMES = [
   },
   {
     clubName: "CNS",
-    clubImage: "/images/minoru.png",
+    clubImage: "/images/cns.png",
     price: {
       종가: "87,849,000",
       고가: "88,249,000",
@@ -208,7 +208,7 @@ export const DECREASE_CLUB_STOKE_ITMES = [
   },
   {
     clubName: "DUCAMI",
-    clubImage: "/images/minoru.png",
+    clubImage: "/images/ducami.png",
     price: {
       종가: "87,849,000",
       고가: "88,249,000",
@@ -217,7 +217,7 @@ export const DECREASE_CLUB_STOKE_ITMES = [
   },
   {
     clubName: "ALT",
-    clubImage: "/images/minoru.png",
+    clubImage: "/images/alt.png",
     price: {
       종가: "87,849,000",
       고가: "88,249,000",
@@ -226,7 +226,7 @@ export const DECREASE_CLUB_STOKE_ITMES = [
   },
   {
     clubName: "DLC",
-    clubImage: "/images/minoru.png",
+    clubImage: "/images/ralo.jpeg",
     price: {
       종가: "87,849,000",
       고가: "88,249,000",
