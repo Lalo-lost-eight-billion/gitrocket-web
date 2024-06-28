@@ -6,6 +6,8 @@ import React, { ReactNode, useState } from "react";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { RecoilRoot } from "recoil";
 import "@/styles/fonts.css";
+import Header from "@/components/Header";
+import styled from "styled-components";
 
 const Provider = ({ children }: { children: ReactNode }) => {
   const [queryClient] = useState(() => new QueryClient());
@@ -15,7 +17,9 @@ const Provider = ({ children }: { children: ReactNode }) => {
       <RecoilRoot>
         <StyledRegistry>
           <GlobalStyles />
-          {children}
+
+          <Header />
+          <Container>{children}</Container>
         </StyledRegistry>
       </RecoilRoot>
     </QueryClientProvider>
@@ -23,3 +27,9 @@ const Provider = ({ children }: { children: ReactNode }) => {
 };
 
 export default Provider;
+
+const Container = styled.div`
+  width: 100%;
+  height: 100%;
+  padding: 115px 0 50px;
+`;
