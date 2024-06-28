@@ -38,7 +38,7 @@ export const SelectBottomLine = styled.div`
   height: 2px;
   position: absolute;
   bottom: 0;
-  background-color: ${palette.commit_4};
+  background-color: ${palette.commit_3};
 `;
 
 export const Profile = styled.div`
