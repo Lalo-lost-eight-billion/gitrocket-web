@@ -9,16 +9,24 @@ import { usePathname, useRouter } from "next/navigation";
 import Portal from "../Portal";
 import Modal from "../Modal";
 import RegistStock from "../Form/RegistStock";
+import { Token } from "@/libs/token";
+import { ACCESS_KEY } from "@/constants/auth.constant";
+import SignIn from "../Form/SignIn";
+import Title from "../Title";
 
 const Header = () => {
   const router = useRouter();
   const pathname = usePathname();
 
-  const [isActieModal, setIsActiveModal] = useState(false);
+  const [isActiveRegistStockModal, setIsActiveRegistStockModal] =
+    useState(false);
+  const [isActiveSignInMoal, setIsActiveSignInMoal] = useState(false);
+
+  const haveToken = Token.getToken(ACCESS_KEY) !== null;
 
   const handleHeaderItemClick = (link: string | null) => {
     if (link === null) {
-      setIsActiveModal(true);
+      setIsActiveRegistStockModal(true);
     } else {
       router.push(link);
     }
@@ -47,27 +55,47 @@ const Header = () => {
           </S.Ul>
         </Row>
 
-        <S.Profile
-          $isSelect={pathname === "/mypage"}
-          onClick={() => router.push("/mypage")}
-        >
-          <Img
-            src={"icons/user.svg"}
-            width={24}
-            height={24}
-            alt="user"
-            cursor={"pointer"}
-          />
-        </S.Profile>
+        {haveToken ? (
+          <S.Profile
+            $isSelect={pathname === "/mypage"}
+            onClick={() => router.push("/mypage")}
+          >
+            <Img
+              src={"icons/user.svg"}
+              width={24}
+              height={24}
+              alt="user"
+              cursor={"pointer"}
+            />
+          </S.Profile>
+        ) : (
+          <S.SignInText onClick={() => setIsActiveSignInMoal(true)}>
+            로그인
+          </S.SignInText>
+        )}
       </S.Container>
 
-      {isActieModal && (
-        <Portal>
-          <Modal setIsActiveModal={setIsActiveModal}>
+      <Portal>
+        {isActiveRegistStockModal && (
+          <Modal setIsActiveModal={setIsActiveRegistStockModal}>
+            <Modal.Header
+              setIsActiveModal={setIsActiveRegistStockModal}
+              title="주식을 등록해보세요"
+            />
             <RegistStock />
           </Modal>
-        </Portal>
-      )}
+        )}
+
+        {isActiveSignInMoal && (
+          <Modal setIsActiveModal={setIsActiveSignInMoal}>
+            <Modal.Header
+              setIsActiveModal={setIsActiveRegistStockModal}
+              title="Github로 간편하게 로그인하기"
+            />
+            <SignIn />
+          </Modal>
+        )}
+      </Portal>
     </>
   );
 };

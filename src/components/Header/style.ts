@@ -60,3 +60,18 @@ export const Profile = styled.div<{ $isSelect: boolean }>`
 
   ${Flex({ $alignItems: "center", $justifyContent: "center" })};
 `;
+
+export const SignInText = styled.div`
+  cursor: pointer;
+  color: #484c50;
+  padding: 10px 15px;
+  border-radius: 10px;
+
+  transition: all 0.1s ease-in-out;
+  border: 1px solid #ddd;
+  &:hover {
+    border: 1px solid ${palette.commit_3};
+  }
+
+  ${Flex({ $alignItems: "center", $justifyContent: "center" })}
+`;

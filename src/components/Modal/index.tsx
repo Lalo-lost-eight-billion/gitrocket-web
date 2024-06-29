@@ -11,37 +11,42 @@ import Title from "../Title";
 
 interface Props {
   children: ReactNode;
+  title: string;
   setIsActiveModal: Dispatch<SetStateAction<boolean>>;
 }
 
-const Modal = ({ children, setIsActiveModal }: Props) => {
+const Modal = ({ children, setIsActiveModal }: Omit<Props, "title">) => {
   useLockScroll();
   useEscCloseModal(() => setIsActiveModal(false));
 
   return (
     <ModalWrap onClick={() => setIsActiveModal(false)}>
-      <Box onClick={(e) => e.stopPropagation()}>
-        <Row
-          $width={"100%"}
-          $alignItems={"center"}
-          $justifyContent={"space-between"}
-        >
-          <Title content="주식을 등록해보세요" />
-          <Img
-            src={"icons/cancel.svg"}
-            width={16}
-            height={16}
-            onClick={() => setIsActiveModal(false)}
-            cursor={"pointer"}
-            alt="cancel"
-          />
-        </Row>
-
-        {children}
-      </Box>
+      <Box onClick={(e) => e.stopPropagation()}>{children}</Box>
     </ModalWrap>
   );
 };
+
+const Header = ({ title, setIsActiveModal }: Omit<Props, "children">) => {
+  return (
+    <Row
+      $width={"100%"}
+      $alignItems={"center"}
+      $justifyContent={"space-between"}
+    >
+      <Title content={title} />
+      <Img
+        src={"icons/cancel.svg"}
+        width={16}
+        height={16}
+        onClick={() => setIsActiveModal(false)}
+        cursor={"pointer"}
+        alt="cancel"
+      />
+    </Row>
+  );
+};
+
+Modal.Header = Header;
 
 export default Modal;
 
