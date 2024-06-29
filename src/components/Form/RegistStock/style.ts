@@ -31,7 +31,7 @@ export const Input = styled.input`
   transition: all 0.15s ease-in-out;
 
   &:focus {
-    border: 2px solid ${palette.commit_3};
+    border: 1px solid ${palette.commit_3};
   }
 
   &::placeholder {

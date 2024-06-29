@@ -18,7 +18,7 @@ export const ProfileWrap = styled.div`
   width: 100%;
 
   position: absolute;
-  bottom: -150px;
+  bottom: -180px;
 
   ${Flex({ $flexDirection: "column", $alignItems: "center", $rowGap: "15px" })}
 `;
@@ -45,12 +45,19 @@ export const PossessionMoney = styled.p`
   }
 `;
 
+export const SignOutText = styled.p`
+  font-size: 17px;
+  font-family: "Pretendard-SemiBold" !important;
+  color: #838181;
+  cursor: pointer;
+`;
+
 export const Wrap = styled.div`
   width: 1160px;
   height: 100%;
 
   margin: 0 auto;
-  margin-top: 215px;
+  margin-top: 240px;
   padding-top: 60px;
 
   border-top: 1px solid #d9d9d9;
