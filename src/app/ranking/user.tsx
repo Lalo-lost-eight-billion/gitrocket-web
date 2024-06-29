@@ -27,7 +27,7 @@ const User = () => {
           <S.Text>{idx + 1}</S.Text>
           <S.Text>{item.name}</S.Text>
           <S.Text>{item.githubId}</S.Text>
-          <S.Text $color={palette.commit_3}>{item.commits}</S.Text>
+          <S.Text $color={palette.commit_3}>{item.commits} 커밋</S.Text>
         </S.TubleWrap>
       ))}
     </S.Wrap>
