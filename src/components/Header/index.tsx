@@ -25,7 +25,9 @@ const Header = () => {
 
   const handleHeaderItemClick = (link: string | null) => {
     if (link === null) {
-      setIsActiveRegistStockModal(true);
+      haveToken
+        ? setIsActiveRegistStockModal(true)
+        : window.alert("로그인 필요한 서비스입니다!");
     } else {
       router.push(link);
     }
