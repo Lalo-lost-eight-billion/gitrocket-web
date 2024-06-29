@@ -1,181 +1,197 @@
+import { StockItemType } from "@/types/stock/stock.type";
+
 export const CLUB_ATTRIBUTES_ITEMS = [
   "순위",
   "동아리",
   "현재가",
   "고가",
   "저가",
-];
+] as const;
 
-export const CLUB_TUBLE_ITEMS = [
+export const CLUB_TUBLE_ITEMS: Omit<
+  StockItemType,
+  "clubImage" | "variationRate"
+>[] = [
   {
     clubName: "B1ND",
     price: {
-      현재가: "87,849,000",
-      고가: "88,249,000",
-      저가: "87,630,000",
+      present: "87,849,000",
+      high: "88,249,000",
+      low: "87,630,000",
     },
   },
   {
     clubName: "CNS",
     price: {
-      현재가: "87,849,000",
-      고가: "88,249,000",
-      저가: "87,630,000",
+      present: "87,849,000",
+      high: "88,249,000",
+      low: "87,630,000",
     },
   },
   {
     clubName: "DUCAMI",
     price: {
-      현재가: "87,849,000",
-      고가: "88,249,000",
-      저가: "87,630,000",
+      present: "87,849,000",
+      high: "88,249,000",
+      low: "87,630,000",
     },
   },
   {
     clubName: "ALT",
     price: {
-      현재가: "87,849,000",
-      고가: "88,249,000",
-      저가: "87,630,000",
+      present: "87,849,000",
+      high: "88,249,000",
+      low: "87,630,000",
     },
   },
   {
     clubName: "DLC",
     price: {
-      현재가: "87,849,000",
-      고가: "88,249,000",
-      저가: "87,630,000",
+      present: "87,849,000",
+      high: "88,249,000",
+      low: "87,630,000",
     },
   },
   {
     clubName: "모디",
     price: {
-      현재가: "87,849,000",
-      고가: "88,249,000",
-      저가: "87,630,000",
+      present: "87,849,000",
+      high: "88,249,000",
+      low: "87,630,000",
     },
   },
   {
     clubName: "inD",
     price: {
-      현재가: "87,849,000",
-      고가: "88,249,000",
-      저가: "87,630,000",
+      present: "87,849,000",
+      high: "88,249,000",
+      low: "87,630,000",
     },
   },
   {
     clubName: "Connect",
     price: {
-      현재가: "87,849,000",
-      고가: "88,249,000",
-      저가: "87,630,000",
+      present: "87,849,000",
+      high: "88,249,000",
+      low: "87,630,000",
     },
   },
   {
     clubName: "8bit",
     price: {
-      현재가: "87,849,000",
-      고가: "88,249,000",
-      저가: "87,630,000",
+      present: "87,849,000",
+      high: "88,249,000",
+      low: "87,630,000",
     },
   },
   {
     clubName: "삼디",
     price: {
-      현재가: "87,849,000",
-      고가: "88,249,000",
-      저가: "87,630,000",
+      present: "87,849,000",
+      high: "88,249,000",
+      low: "87,630,000",
     },
   },
-];
+] as const;
 
-export const INQUIRED_CLUB_STOCK_ITEMS = [
+export const INQUIRED_CLUB_STOCK_ITEMS: Omit<
+  StockItemType,
+  "clubImage" | "variationRate"
+>[] = [
   {
     clubName: "B1ND",
     price: {
-      현재가: "87,849,000",
-      고가: "88,249,000",
-      저가: "87,630,000",
+      present: "87,849,000",
+      high: "88,249,000",
+      low: "87,630,000",
     },
   },
   {
     clubName: "CNS",
     price: {
-      현재가: "87,849,000",
-      고가: "88,249,000",
-      저가: "87,630,000",
+      present: "87,849,000",
+      high: "88,249,000",
+      low: "87,630,000",
     },
   },
   {
     clubName: "DUCAMI",
     price: {
-      현재가: "87,849,000",
-      고가: "88,249,000",
-      저가: "87,630,000",
+      present: "87,849,000",
+      high: "88,249,000",
+      low: "87,630,000",
     },
   },
   {
     clubName: "ALT",
     price: {
-      현재가: "87,849,000",
-      고가: "88,249,000",
-      저가: "87,630,000",
+      present: "87,849,000",
+      high: "88,249,000",
+      low: "87,630,000",
     },
   },
   {
     clubName: "DLC",
     price: {
-      현재가: "87,849,000",
-      고가: "88,249,000",
-      저가: "87,630,000",
+      present: "87,849,000",
+      high: "88,249,000",
+      low: "87,630,000",
     },
   },
-];
+] as const;
 
-export const INCREASE_CLUB_STOCK_ITMES = [
+export const INCREASE_CLUB_STOCK_ITMES: Omit<
+  StockItemType,
+  "clubImage" | "variationRate"
+>[] = [
   {
     clubName: "B1ND",
     price: {
-      현재가: "87,849,000",
-      고가: "88,249,000",
-      저가: "87,630,000",
+      present: "87,849,000",
+      high: "88,249,000",
+      low: "87,630,000",
     },
   },
   {
     clubName: "CNS",
     price: {
-      현재가: "87,849,000",
-      고가: "88,249,000",
-      저가: "87,630,000",
+      present: "87,849,000",
+      high: "88,249,000",
+      low: "87,630,000",
     },
   },
   {
     clubName: "DUCAMI",
     price: {
-      현재가: "87,849,000",
-      고가: "88,249,000",
-      저가: "87,630,000",
+      present: "87,849,000",
+      high: "88,249,000",
+      low: "87,630,000",
     },
   },
   {
     clubName: "ALT",
     price: {
-      현재가: "87,849,000",
-      고가: "88,249,000",
-      저가: "87,630,000",
+      present: "87,849,000",
+      high: "88,249,000",
+      low: "87,630,000",
     },
   },
   {
     clubName: "DLC",
     price: {
-      현재가: "87,849,000",
-      고가: "88,249,000",
-      저가: "87,630,000",
+      present: "87,849,000",
+      high: "88,249,000",
+      low: "87,630,000",
     },
   },
-];
+] as const;
 
-export const USER_ATTRIBUTES_ITEMS = ["순위", "이름", "깃허브", "총 커밋"];
+export const USER_ATTRIBUTES_ITEMS = [
+  "순위",
+  "이름",
+  "깃허브",
+  "총 커밋",
+] as const;
 
 export const USER_TUBLE_ITEMS = [
   {
@@ -189,4 +205,4 @@ export const USER_TUBLE_ITEMS = [
   { name: "김종윤", githubId: "rlawhddbs", commits: 279 },
   { name: "김종윤", githubId: "PARAOOO", commits: 268 },
   { name: "김종윤", githubId: "aprnald74", commits: 266 },
-];
+] as const;

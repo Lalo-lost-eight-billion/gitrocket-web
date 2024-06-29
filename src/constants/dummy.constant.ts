@@ -1,12 +1,14 @@
-export const REGISTED_CLUB_STOCK_ITMES = [
+import { StockItemType } from "@/types/stock/stock.type";
+
+export const REGISTED_CLUB_STOCK_ITMES: StockItemType[] = [
   {
     clubName: "B1ND",
     clubImage: "/images/b1nd.png",
     variationRate: "+3.00%",
     price: {
-      현재가: "87,849,000",
-      고가: "88,249,000",
-      저가: "87,630,000",
+      present: "87,849,000",
+      high: "88,249,000",
+      low: "87,630,000",
     },
   },
   {
@@ -14,9 +16,9 @@ export const REGISTED_CLUB_STOCK_ITMES = [
     clubImage: "/images/cns.png",
     variationRate: "+2.37%",
     price: {
-      현재가: "87,849,000",
-      고가: "88,249,000",
-      저가: "87,630,000",
+      present: "87,849,000",
+      high: "88,249,000",
+      low: "87,630,000",
     },
   },
   {
@@ -24,9 +26,9 @@ export const REGISTED_CLUB_STOCK_ITMES = [
     clubImage: "/images/ducami.png",
     variationRate: "+1.10%",
     price: {
-      현재가: "87,849,000",
-      고가: "88,249,000",
-      저가: "87,630,000",
+      present: "87,849,000",
+      high: "88,249,000",
+      low: "87,630,000",
     },
   },
   {
@@ -34,9 +36,9 @@ export const REGISTED_CLUB_STOCK_ITMES = [
     clubImage: "/images/alt.png",
     variationRate: "+0.54%",
     price: {
-      현재가: "87,849,000",
-      고가: "88,249,000",
-      저가: "87,630,000",
+      present: "87,849,000",
+      high: "88,249,000",
+      low: "87,630,000",
     },
   },
   {
@@ -44,9 +46,9 @@ export const REGISTED_CLUB_STOCK_ITMES = [
     clubImage: "/images/ralo.jpeg",
     variationRate: "+0.44%",
     price: {
-      현재가: "87,849,000",
-      고가: "88,249,000",
-      저가: "87,630,000",
+      present: "87,849,000",
+      high: "88,249,000",
+      low: "87,630,000",
     },
   },
   {
@@ -54,9 +56,9 @@ export const REGISTED_CLUB_STOCK_ITMES = [
     clubImage: "/images/modi.png",
     variationRate: "-1.15%",
     price: {
-      현재가: "87,849,000",
-      고가: "88,249,000",
-      저가: "87,630,000",
+      present: "87,849,000",
+      high: "88,249,000",
+      low: "87,630,000",
     },
   },
   {
@@ -64,9 +66,9 @@ export const REGISTED_CLUB_STOCK_ITMES = [
     clubImage: "/images/ralo.jpeg",
     variationRate: "-0.21%",
     price: {
-      현재가: "87,849,000",
-      고가: "88,249,000",
-      저가: "87,630,000",
+      present: "87,849,000",
+      high: "88,249,000",
+      low: "87,630,000",
     },
   },
   {
@@ -74,9 +76,9 @@ export const REGISTED_CLUB_STOCK_ITMES = [
     clubImage: "/images/ralo.jpeg",
     variationRate: "-0.96%",
     price: {
-      현재가: "87,849,000",
-      고가: "88,249,000",
-      저가: "87,630,000",
+      present: "87,849,000",
+      high: "88,249,000",
+      low: "87,630,000",
     },
   },
   {
@@ -84,9 +86,9 @@ export const REGISTED_CLUB_STOCK_ITMES = [
     variationRate: "-1.05%",
     clubImage: "/images/ralo.jpeg",
     price: {
-      현재가: "87,849,000",
-      고가: "88,249,000",
-      저가: "87,630,000",
+      present: "87,849,000",
+      high: "88,249,000",
+      low: "87,630,000",
     },
   },
   {
@@ -94,22 +96,22 @@ export const REGISTED_CLUB_STOCK_ITMES = [
     clubImage: "/images/ralo.jpeg",
     variationRate: "-0.10%",
     price: {
-      현재가: "87,849,000",
-      고가: "88,249,000",
-      저가: "87,630,000",
+      present: "87,849,000",
+      high: "88,249,000",
+      low: "87,630,000",
     },
   },
-];
+] as const;
 
-export const INQUIRED_CLUB_STOCK_ITEMS = [
+export const INQUIRED_CLUB_STOCK_ITEMS: StockItemType[] = [
   {
     clubName: "B1ND",
     clubImage: "/images/b1nd.png",
     variationRate: "+3.00%",
     price: {
-      현재가: "87,849,000",
-      고가: "88,249,000",
-      저가: "87,630,000",
+      present: "87,849,000",
+      high: "88,249,000",
+      low: "87,630,000",
     },
   },
   {
@@ -117,9 +119,9 @@ export const INQUIRED_CLUB_STOCK_ITEMS = [
     clubImage: "/images/cns.png",
     variationRate: "+2.37%",
     price: {
-      현재가: "87,849,000",
-      고가: "88,249,000",
-      저가: "87,630,000",
+      present: "87,849,000",
+      high: "88,249,000",
+      low: "87,630,000",
     },
   },
   {
@@ -127,9 +129,9 @@ export const INQUIRED_CLUB_STOCK_ITEMS = [
     clubImage: "/images/ducami.png",
     variationRate: "+1.10%",
     price: {
-      현재가: "87,849,000",
-      고가: "88,249,000",
-      저가: "87,630,000",
+      present: "87,849,000",
+      high: "88,249,000",
+      low: "87,630,000",
     },
   },
   {
@@ -137,9 +139,9 @@ export const INQUIRED_CLUB_STOCK_ITEMS = [
     clubImage: "/images/alt.png",
     variationRate: "+0.54%",
     price: {
-      현재가: "87,849,000",
-      고가: "88,249,000",
-      저가: "87,630,000",
+      present: "87,849,000",
+      high: "88,249,000",
+      low: "87,630,000",
     },
   },
   {
@@ -147,22 +149,22 @@ export const INQUIRED_CLUB_STOCK_ITEMS = [
     clubImage: "/images/ralo.jpeg",
     variationRate: "+0.44%",
     price: {
-      현재가: "87,849,000",
-      고가: "88,249,000",
-      저가: "87,630,000",
+      present: "87,849,000",
+      high: "88,249,000",
+      low: "87,630,000",
     },
   },
-];
+] as const;
 
-export const INCREASE_CLUB_STOCK_ITMES = [
+export const INCREASE_CLUB_STOCK_ITMES: StockItemType[] = [
   {
     clubName: "B1ND",
     clubImage: "/images/b1nd.png",
     variationRate: "+3.00%",
     price: {
-      현재가: "87,849,000",
-      고가: "88,249,000",
-      저가: "87,630,000",
+      present: "87,849,000",
+      high: "88,249,000",
+      low: "87,630,000",
     },
   },
   {
@@ -170,9 +172,9 @@ export const INCREASE_CLUB_STOCK_ITMES = [
     clubImage: "/images/cns.png",
     variationRate: "+2.37%",
     price: {
-      현재가: "87,849,000",
-      고가: "88,249,000",
-      저가: "87,630,000",
+      present: "87,849,000",
+      high: "88,249,000",
+      low: "87,630,000",
     },
   },
   {
@@ -180,9 +182,9 @@ export const INCREASE_CLUB_STOCK_ITMES = [
     clubImage: "/images/ducami.png",
     variationRate: "+1.10%",
     price: {
-      현재가: "87,849,000",
-      고가: "88,249,000",
-      저가: "87,630,000",
+      present: "87,849,000",
+      high: "88,249,000",
+      low: "87,630,000",
     },
   },
   {
@@ -190,9 +192,9 @@ export const INCREASE_CLUB_STOCK_ITMES = [
     clubImage: "/images/alt.png",
     variationRate: "+0.54%",
     price: {
-      현재가: "87,849,000",
-      고가: "88,249,000",
-      저가: "87,630,000",
+      present: "87,849,000",
+      high: "88,249,000",
+      low: "87,630,000",
     },
   },
   {
@@ -200,22 +202,22 @@ export const INCREASE_CLUB_STOCK_ITMES = [
     clubImage: "/images/ralo.jpeg",
     variationRate: "+0.44%",
     price: {
-      현재가: "87,849,000",
-      고가: "88,249,000",
-      저가: "87,630,000",
+      present: "87,849,000",
+      high: "88,249,000",
+      low: "87,630,000",
     },
   },
-];
+] as const;
 
-export const DECREASE_CLUB_STOCK_ITMES = [
+export const DECREASE_CLUB_STOCK_ITMES: StockItemType[] = [
   {
     clubName: "모디",
     clubImage: "/images/modi.png",
     variationRate: "-1.15%",
     price: {
-      현재가: "87,849,000",
-      고가: "88,249,000",
-      저가: "87,630,000",
+      present: "87,849,000",
+      high: "88,249,000",
+      low: "87,630,000",
     },
   },
   {
@@ -223,9 +225,9 @@ export const DECREASE_CLUB_STOCK_ITMES = [
     clubImage: "/images/ralo.jpeg",
     variationRate: "-0.21%",
     price: {
-      현재가: "87,849,000",
-      고가: "88,249,000",
-      저가: "87,630,000",
+      present: "87,849,000",
+      high: "88,249,000",
+      low: "87,630,000",
     },
   },
   {
@@ -233,9 +235,9 @@ export const DECREASE_CLUB_STOCK_ITMES = [
     clubImage: "/images/ralo.jpeg",
     variationRate: "-0.96%",
     price: {
-      현재가: "87,849,000",
-      고가: "88,249,000",
-      저가: "87,630,000",
+      present: "87,849,000",
+      high: "88,249,000",
+      low: "87,630,000",
     },
   },
   {
@@ -243,9 +245,9 @@ export const DECREASE_CLUB_STOCK_ITMES = [
     variationRate: "-1.05%",
     clubImage: "/images/ralo.jpeg",
     price: {
-      현재가: "87,849,000",
-      고가: "88,249,000",
-      저가: "87,630,000",
+      present: "87,849,000",
+      high: "88,249,000",
+      low: "87,630,000",
     },
   },
   {
@@ -253,9 +255,9 @@ export const DECREASE_CLUB_STOCK_ITMES = [
     clubImage: "/images/ralo.jpeg",
     variationRate: "-0.10%",
     price: {
-      현재가: "87,849,000",
-      고가: "88,249,000",
-      저가: "87,630,000",
+      present: "87,849,000",
+      high: "88,249,000",
+      low: "87,630,000",
     },
   },
-];
+] as const;

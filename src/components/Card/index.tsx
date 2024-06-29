@@ -12,13 +12,13 @@ interface Props {
   clubImage: string;
   variationRate: string;
   price: {
-    현재가: string;
-    고가: string;
-    저가: string;
+    present: string;
+    high: string;
+    low: string;
   };
 }
 
-type priceType = "현재가" | "고가" | "저가";
+type priceType = "present" | "high" | "low";
 
 const Card = ({
   onClick,
@@ -27,7 +27,20 @@ const Card = ({
   variationRate,
   price,
 }: Props) => {
-  const priceList: priceType[] = ["현재가", "고가", "저가"];
+  const priceList = ["현재가", "고가", "저가"];
+
+  const convertPriceTypeToEnglish = (price: string) => {
+    switch (price) {
+      case "현재가":
+        return "present";
+      case "고가":
+        return "high";
+      case "저가":
+        return "low";
+      default:
+        return "";
+    }
+  };
 
   return (
     <S.CardBox onClick={onClick}>
@@ -55,7 +68,9 @@ const Card = ({
         {priceList.map((item, idx) => (
           <Row $alignItems={"center"} key={idx}>
             <S.PriceType>{item}</S.PriceType>
-            <S.Price $priceType={item}>{price[item]}</S.Price>
+            <S.Price $priceType={convertPriceTypeToEnglish(item) as priceType}>
+              {price[convertPriceTypeToEnglish(item) as priceType]}
+            </S.Price>
           </Row>
         ))}
       </Column>

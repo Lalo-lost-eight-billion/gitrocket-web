@@ -59,17 +59,17 @@ export const PriceType = styled.p`
   font-family: "Pretendard-SemiBold" !important;
 `;
 
-export const Price = styled.p<{ $priceType: "현재가" | "고가" | "저가" }>`
+export const Price = styled.p<{ $priceType: "present" | "high" | "low" }>`
   font-family: "Pretendard-SemiBold" !important;
   padding-left: 8px;
   color: ${({ $priceType }) => {
     let textColor = "B1B4B9";
 
-    if ($priceType === "고가") {
+    if ($priceType === "high") {
       textColor = palette.commit_5;
     }
 
-    if ($priceType === "현재가") {
+    if ($priceType === "present") {
       textColor = palette.commit_3;
     }
 
