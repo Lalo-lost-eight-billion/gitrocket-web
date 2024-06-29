@@ -25,7 +25,9 @@ const Header = () => {
           src={"icons/logo.svg"}
           width={140}
           height={36}
+          onClick={() => (window.location.href = "/")}
           cursor={"pointer"}
+          customStyle={S.StyledLogo}
           alt="logo"
         />
         <S.Ul>
@@ -38,7 +40,10 @@ const Header = () => {
         </S.Ul>
       </Row>
 
-      <S.Profile onClick={() => router.push("/mypage")}>
+      <S.Profile
+        $isSelect={pathname === "/mypage"}
+        onClick={() => router.push("/mypage")}
+      >
         <Img
           src={"icons/user.svg"}
           width={24}

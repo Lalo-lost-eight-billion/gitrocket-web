@@ -1,5 +1,5 @@
 import { Flex } from "@/styles/Flex";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { palette } from "@/styles/palette";
 
 export const Container = styled.header`
@@ -19,6 +19,12 @@ export const Container = styled.header`
   ${Flex({ $alignItems: "center", $justifyContent: "space-between" })}
 `;
 
+export const StyledLogo = css`
+  &:active {
+    opacity: 0.7;
+  }
+`;
+
 export const Ul = styled.ul`
   padding-left: 146px;
 
@@ -36,16 +42,21 @@ export const Li = styled.li`
 export const SelectBottomLine = styled.div`
   width: 100%;
   height: 2px;
+
   position: absolute;
   bottom: 0;
   background-color: ${palette.commit_3};
 `;
 
-export const Profile = styled.div`
+export const Profile = styled.div<{ $isSelect: boolean }>`
   width: 40px;
   height: 40px;
+
   background-color: #f3f3f4;
-  border-radius: 10px;
   cursor: pointer;
-  ${Flex({ $alignItems: "center", $justifyContent: "center" })}
+
+  border-radius: 10px;
+  border: ${({ $isSelect }) => $isSelect && "2px solid #ddd"};
+
+  ${Flex({ $alignItems: "center", $justifyContent: "center" })};
 `;
