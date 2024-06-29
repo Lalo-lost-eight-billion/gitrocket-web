@@ -3,10 +3,10 @@
 import Card from "@/components/Card";
 import Title from "@/components/Title";
 import {
-  DECREASE_CLUB_STOKE_ITMES,
-  INCREASE_CLUB_STOKE_ITMES,
-  INQUIRED_CLUB_STOKE_ITEMS,
-  REGISTED_CLUB_STOKE_ITMES,
+  DECREASE_CLUB_STOCK_ITMES,
+  INCREASE_CLUB_STOCK_ITMES,
+  INQUIRED_CLUB_STOCK_ITEMS,
+  REGISTED_CLUB_STOCK_ITMES,
 } from "@/constants/dummy.constant";
 import { Column, Flex, Row } from "@/styles/Flex";
 import { AppRouterInstance } from "next/dist/shared/lib/app-router-context.shared-runtime";
@@ -19,15 +19,15 @@ const Home = () => {
 
   return (
     <Container>
-      <RegistedClubStoke router={router} />
-      <InquiredClubStoke router={router} />
-      <IncreaseClubStoke router={router} />
-      <DecreaseClubStoke router={router} />
+      <RegistedClubStock router={router} />
+      <InquiredClubStock router={router} />
+      <IncreaseClubStock router={router} />
+      <DecreaseClubStock router={router} />
     </Container>
   );
 };
 
-const RegistedClubStoke = ({ router }: { router: AppRouterInstance }) => {
+const RegistedClubStock = ({ router }: { router: AppRouterInstance }) => {
   return (
     <Column $width={"100%"} $rowGap={"20px"}>
       <Title content="등록된 동아리 주식을 확인해봐요" />
@@ -38,10 +38,10 @@ const RegistedClubStoke = ({ router }: { router: AppRouterInstance }) => {
         $columnGap={"10px"}
         $rowGap={"20px"}
       >
-        {REGISTED_CLUB_STOKE_ITMES.map((item, idx) => (
+        {REGISTED_CLUB_STOCK_ITMES.map((item, idx) => (
           <Card
             key={idx}
-            onClick={() => router.push(`/stoke/${idx}`)}
+            onClick={() => router.push(`/stock/${idx}`)}
             {...item}
           />
         ))}
@@ -50,7 +50,7 @@ const RegistedClubStoke = ({ router }: { router: AppRouterInstance }) => {
   );
 };
 
-const InquiredClubStoke = ({ router }: { router: AppRouterInstance }) => {
+const InquiredClubStock = ({ router }: { router: AppRouterInstance }) => {
   return (
     <Column $width={"100%"} $rowGap={"20px"}>
       <Title content="최근 조회한 동아리 주식이에요" />
@@ -61,10 +61,10 @@ const InquiredClubStoke = ({ router }: { router: AppRouterInstance }) => {
         $columnGap={"10px"}
         $rowGap={"20px"}
       >
-        {INQUIRED_CLUB_STOKE_ITEMS.map((item, idx) => (
+        {INQUIRED_CLUB_STOCK_ITEMS.map((item, idx) => (
           <Card
             key={idx}
-            onClick={() => router.push(`/stoke/${idx}`)}
+            onClick={() => router.push(`/stock/${idx}`)}
             {...item}
           />
         ))}
@@ -73,7 +73,7 @@ const InquiredClubStoke = ({ router }: { router: AppRouterInstance }) => {
   );
 };
 
-const IncreaseClubStoke = ({ router }: { router: AppRouterInstance }) => {
+const IncreaseClubStock = ({ router }: { router: AppRouterInstance }) => {
   return (
     <Column $width={"100%"} $rowGap={"20px"}>
       <Title content="현재 상승률이 높은 주식들이에요" />
@@ -84,10 +84,10 @@ const IncreaseClubStoke = ({ router }: { router: AppRouterInstance }) => {
         $columnGap={"10px"}
         $rowGap={"20px"}
       >
-        {INCREASE_CLUB_STOKE_ITMES.map((item, idx) => (
+        {INCREASE_CLUB_STOCK_ITMES.map((item, idx) => (
           <Card
             key={idx}
-            onClick={() => router.push(`/stoke/${idx}`)}
+            onClick={() => router.push(`/stock/${idx}`)}
             {...item}
           />
         ))}
@@ -96,7 +96,7 @@ const IncreaseClubStoke = ({ router }: { router: AppRouterInstance }) => {
   );
 };
 
-const DecreaseClubStoke = ({ router }: { router: AppRouterInstance }) => {
+const DecreaseClubStock = ({ router }: { router: AppRouterInstance }) => {
   return (
     <Column $width={"100%"} $rowGap={"20px"}>
       <Title content="현재 하락율이 높은 주식들이에요" />
@@ -107,10 +107,10 @@ const DecreaseClubStoke = ({ router }: { router: AppRouterInstance }) => {
         $columnGap={"10px"}
         $rowGap={"20px"}
       >
-        {DECREASE_CLUB_STOKE_ITMES.map((item, idx) => (
+        {DECREASE_CLUB_STOCK_ITMES.map((item, idx) => (
           <Card
             key={idx}
-            onClick={() => router.push(`/stoke/${idx}`)}
+            onClick={() => router.push(`/stock/${idx}`)}
             {...item}
           />
         ))}
@@ -124,7 +124,9 @@ export default Home;
 const Container = styled.div`
   width: 1160px;
   height: 100%;
+
   margin: 0 auto;
+  padding-top: 50px;
 
   ${Flex({ $flexDirection: "column", $rowGap: "70px" })}
 `;

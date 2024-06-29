@@ -3,9 +3,9 @@
 import { usePathname } from "next/navigation";
 import React from "react";
 
-const Stoke = () => {
-  const pathname = Number(usePathname().split("/stoke/")[1]);
+const Stock = () => {
+  const pathname = Number(usePathname().split("/stock/")[1]);
   return <div>{pathname}</div>;
 };
 
-export default Stoke;
+export default Stock;
