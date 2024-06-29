@@ -12,7 +12,6 @@ import RegistStock from "../Form/RegistStock";
 import { Token } from "@/libs/token";
 import { ACCESS_KEY } from "@/constants/auth.constant";
 import SignIn from "../Form/SignIn";
-import Title from "../Title";
 
 const Header = () => {
   const router = useRouter();
