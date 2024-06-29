@@ -8,26 +8,35 @@ import {
   INQUIRED_CLUB_STOCK_ITEMS,
   REGISTED_CLUB_STOCK_ITMES,
 } from "@/constants/dummy.constant";
+import { StockItemAtom } from "@/stores/stock/stock.store";
 import { Column, Flex, Row } from "@/styles/Flex";
+import { StockItemType } from "@/types/stock/stock.type";
 import { AppRouterInstance } from "next/dist/shared/lib/app-router-context.shared-runtime";
 import { useRouter } from "next/navigation";
-import React from "react";
+import React, { Dispatch, SetStateAction } from "react";
+import { useSetRecoilState } from "recoil";
 import styled from "styled-components";
 
 const Home = () => {
   const router = useRouter();
+  const setStokeItem = useSetRecoilState(StockItemAtom);
 
   return (
     <Container>
-      <RegistedClubStock router={router} />
-      <InquiredClubStock router={router} />
-      <IncreaseClubStock router={router} />
-      <DecreaseClubStock router={router} />
+      <RegistedClubStock router={router} setStokeItem={setStokeItem} />
+      <InquiredClubStock router={router} setStokeItem={setStokeItem} />
+      <IncreaseClubStock router={router} setStokeItem={setStokeItem} />
+      <DecreaseClubStock router={router} setStokeItem={setStokeItem} />
     </Container>
   );
 };
 
-const RegistedClubStock = ({ router }: { router: AppRouterInstance }) => {
+interface Props {
+  router: AppRouterInstance;
+  setStokeItem: Dispatch<SetStateAction<StockItemType | null>>;
+}
+
+const RegistedClubStock = ({ router, setStokeItem }: Props) => {
   return (
     <Column $width={"100%"} $rowGap={"20px"}>
       <Title content="등록된 동아리 주식을 확인해봐요" />
@@ -41,7 +50,10 @@ const RegistedClubStock = ({ router }: { router: AppRouterInstance }) => {
         {REGISTED_CLUB_STOCK_ITMES.map((item, idx) => (
           <Card
             key={idx}
-            onClick={() => router.push(`/stock/${idx}`)}
+            onClick={() => {
+              setStokeItem(item);
+              router.push(`/stock/${idx}`);
+            }}
             {...item}
           />
         ))}
@@ -50,7 +62,7 @@ const RegistedClubStock = ({ router }: { router: AppRouterInstance }) => {
   );
 };
 
-const InquiredClubStock = ({ router }: { router: AppRouterInstance }) => {
+const InquiredClubStock = ({ router, setStokeItem }: Props) => {
   return (
     <Column $width={"100%"} $rowGap={"20px"}>
       <Title content="최근 조회한 동아리 주식이에요" />
@@ -64,7 +76,10 @@ const InquiredClubStock = ({ router }: { router: AppRouterInstance }) => {
         {INQUIRED_CLUB_STOCK_ITEMS.map((item, idx) => (
           <Card
             key={idx}
-            onClick={() => router.push(`/stock/${idx}`)}
+            onClick={() => {
+              setStokeItem(item);
+              router.push(`/stock/${idx}`);
+            }}
             {...item}
           />
         ))}
@@ -73,7 +88,7 @@ const InquiredClubStock = ({ router }: { router: AppRouterInstance }) => {
   );
 };
 
-const IncreaseClubStock = ({ router }: { router: AppRouterInstance }) => {
+const IncreaseClubStock = ({ router, setStokeItem }: Props) => {
   return (
     <Column $width={"100%"} $rowGap={"20px"}>
       <Title content="현재 상승률이 높은 주식들이에요" />
@@ -87,7 +102,10 @@ const IncreaseClubStock = ({ router }: { router: AppRouterInstance }) => {
         {INCREASE_CLUB_STOCK_ITMES.map((item, idx) => (
           <Card
             key={idx}
-            onClick={() => router.push(`/stock/${idx}`)}
+            onClick={() => {
+              setStokeItem(item);
+              router.push(`/stock/${idx}`);
+            }}
             {...item}
           />
         ))}
@@ -96,7 +114,7 @@ const IncreaseClubStock = ({ router }: { router: AppRouterInstance }) => {
   );
 };
 
-const DecreaseClubStock = ({ router }: { router: AppRouterInstance }) => {
+const DecreaseClubStock = ({ router, setStokeItem }: Props) => {
   return (
     <Column $width={"100%"} $rowGap={"20px"}>
       <Title content="현재 하락율이 높은 주식들이에요" />
@@ -110,7 +128,10 @@ const DecreaseClubStock = ({ router }: { router: AppRouterInstance }) => {
         {DECREASE_CLUB_STOCK_ITMES.map((item, idx) => (
           <Card
             key={idx}
-            onClick={() => router.push(`/stock/${idx}`)}
+            onClick={() => {
+              setStokeItem(item);
+              router.push(`/stock/${idx}`);
+            }}
             {...item}
           />
         ))}
