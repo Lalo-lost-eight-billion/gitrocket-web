@@ -38,7 +38,7 @@ const Header = () => {
       <S.Container>
         <Row $alignItems={"center"}>
           <Img
-            src={"icons/logo.svg"}
+            src={"/icons/logo.svg"}
             width={140}
             height={36}
             onClick={() => (window.location.href = "/")}
@@ -62,7 +62,7 @@ const Header = () => {
             onClick={() => router.push("/mypage")}
           >
             <Img
-              src={"icons/user.svg"}
+              src={"/icons/user.svg"}
               width={24}
               height={24}
               alt="user"

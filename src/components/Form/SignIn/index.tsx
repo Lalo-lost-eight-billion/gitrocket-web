@@ -18,7 +18,7 @@ const SignIn = () => {
   return (
     <S.Form onSubmit={handleSubmit}>
       <S.GithubButton type="submit">
-        <Img src={"icons/github.svg"} width={24} height={24} alt="github" />
+        <Img src={"/icons/github.svg"} width={24} height={24} alt="github" />
         <p>Github 로그인하기</p>
       </S.GithubButton>
     </S.Form>

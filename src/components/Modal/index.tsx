@@ -35,7 +35,7 @@ const Header = ({ title, setIsActiveModal }: Omit<Props, "children">) => {
     >
       <Title content={title} />
       <Img
-        src={"icons/cancel.svg"}
+        src={"/icons/cancel.svg"}
         width={16}
         height={16}
         onClick={() => setIsActiveModal(false)}
