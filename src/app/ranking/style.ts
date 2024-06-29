@@ -5,7 +5,10 @@ import styled, { CSSProperties } from "styled-components";
 export const Container = styled.div`
   width: 1160px;
   height: 100%;
+
   margin: 0 auto;
+  padding-top: 50px;
+
   ${Flex({ $flexDirection: "column" })}
 `;
 

@@ -31,5 +31,5 @@ export default Provider;
 const Container = styled.div`
   width: 100%;
   height: 100%;
-  padding: 115px 0 50px;
+  padding: 65px 0 50px;
 `;

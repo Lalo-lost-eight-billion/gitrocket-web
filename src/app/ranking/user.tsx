@@ -4,12 +4,9 @@ import React from "react";
 import * as S from "./style";
 import Title from "@/components/Title";
 import { USER_ATTRIBUTES_ITEMS, USER_TUBLE_ITEMS } from "./constant";
-import { useRouter } from "next/navigation";
 import { palette } from "@/styles/palette";
 
 const User = () => {
-  const router = useRouter();
-
   return (
     <S.Wrap>
       <Title content="현재 커밋 수가 가장 높은 사용자 순으로 확인해봐요" />
