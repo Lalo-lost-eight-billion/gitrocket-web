@@ -1,10 +1,9 @@
 /** @type {import('next').NextConfig} */
-import withImages from "next-images";
 
-const nextConfig = withImages({
+const nextConfig = {
   compiler: {
     styledComponents: true,
   },
-});
+};
 
 export default nextConfig;
