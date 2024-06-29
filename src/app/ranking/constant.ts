@@ -1,10 +1,16 @@
-export const CLUB_ATTRIBUTES_ITEMS = ["순위", "동아리", "종가", "고가", "저가"];
+export const CLUB_ATTRIBUTES_ITEMS = [
+  "순위",
+  "동아리",
+  "현재가",
+  "고가",
+  "저가",
+];
 
 export const CLUB_TUBLE_ITEMS = [
   {
     clubName: "B1ND",
     price: {
-      종가: "87,849,000",
+      현재가: "87,849,000",
       고가: "88,249,000",
       저가: "87,630,000",
     },
@@ -12,7 +18,7 @@ export const CLUB_TUBLE_ITEMS = [
   {
     clubName: "CNS",
     price: {
-      종가: "87,849,000",
+      현재가: "87,849,000",
       고가: "88,249,000",
       저가: "87,630,000",
     },
@@ -20,7 +26,7 @@ export const CLUB_TUBLE_ITEMS = [
   {
     clubName: "DUCAMI",
     price: {
-      종가: "87,849,000",
+      현재가: "87,849,000",
       고가: "88,249,000",
       저가: "87,630,000",
     },
@@ -28,7 +34,7 @@ export const CLUB_TUBLE_ITEMS = [
   {
     clubName: "ALT",
     price: {
-      종가: "87,849,000",
+      현재가: "87,849,000",
       고가: "88,249,000",
       저가: "87,630,000",
     },
@@ -36,7 +42,7 @@ export const CLUB_TUBLE_ITEMS = [
   {
     clubName: "DLC",
     price: {
-      종가: "87,849,000",
+      현재가: "87,849,000",
       고가: "88,249,000",
       저가: "87,630,000",
     },
@@ -44,7 +50,7 @@ export const CLUB_TUBLE_ITEMS = [
   {
     clubName: "모디",
     price: {
-      종가: "87,849,000",
+      현재가: "87,849,000",
       고가: "88,249,000",
       저가: "87,630,000",
     },
@@ -52,7 +58,7 @@ export const CLUB_TUBLE_ITEMS = [
   {
     clubName: "inD",
     price: {
-      종가: "87,849,000",
+      현재가: "87,849,000",
       고가: "88,249,000",
       저가: "87,630,000",
     },
@@ -60,7 +66,7 @@ export const CLUB_TUBLE_ITEMS = [
   {
     clubName: "Connect",
     price: {
-      종가: "87,849,000",
+      현재가: "87,849,000",
       고가: "88,249,000",
       저가: "87,630,000",
     },
@@ -68,7 +74,7 @@ export const CLUB_TUBLE_ITEMS = [
   {
     clubName: "8bit",
     price: {
-      종가: "87,849,000",
+      현재가: "87,849,000",
       고가: "88,249,000",
       저가: "87,630,000",
     },
@@ -76,18 +82,18 @@ export const CLUB_TUBLE_ITEMS = [
   {
     clubName: "삼디",
     price: {
-      종가: "87,849,000",
+      현재가: "87,849,000",
       고가: "88,249,000",
       저가: "87,630,000",
     },
   },
 ];
 
-export const INQUIRED_CLUB_STOKE_ITEMS = [
+export const INQUIRED_CLUB_STOCK_ITEMS = [
   {
     clubName: "B1ND",
     price: {
-      종가: "87,849,000",
+      현재가: "87,849,000",
       고가: "88,249,000",
       저가: "87,630,000",
     },
@@ -95,7 +101,7 @@ export const INQUIRED_CLUB_STOKE_ITEMS = [
   {
     clubName: "CNS",
     price: {
-      종가: "87,849,000",
+      현재가: "87,849,000",
       고가: "88,249,000",
       저가: "87,630,000",
     },
@@ -103,7 +109,7 @@ export const INQUIRED_CLUB_STOKE_ITEMS = [
   {
     clubName: "DUCAMI",
     price: {
-      종가: "87,849,000",
+      현재가: "87,849,000",
       고가: "88,249,000",
       저가: "87,630,000",
     },
@@ -111,7 +117,7 @@ export const INQUIRED_CLUB_STOKE_ITEMS = [
   {
     clubName: "ALT",
     price: {
-      종가: "87,849,000",
+      현재가: "87,849,000",
       고가: "88,249,000",
       저가: "87,630,000",
     },
@@ -119,18 +125,18 @@ export const INQUIRED_CLUB_STOKE_ITEMS = [
   {
     clubName: "DLC",
     price: {
-      종가: "87,849,000",
+      현재가: "87,849,000",
       고가: "88,249,000",
       저가: "87,630,000",
     },
   },
 ];
 
-export const INCREASE_CLUB_STOKE_ITMES = [
+export const INCREASE_CLUB_STOCK_ITMES = [
   {
     clubName: "B1ND",
     price: {
-      종가: "87,849,000",
+      현재가: "87,849,000",
       고가: "88,249,000",
       저가: "87,630,000",
     },
@@ -138,7 +144,7 @@ export const INCREASE_CLUB_STOKE_ITMES = [
   {
     clubName: "CNS",
     price: {
-      종가: "87,849,000",
+      현재가: "87,849,000",
       고가: "88,249,000",
       저가: "87,630,000",
     },
@@ -146,7 +152,7 @@ export const INCREASE_CLUB_STOKE_ITMES = [
   {
     clubName: "DUCAMI",
     price: {
-      종가: "87,849,000",
+      현재가: "87,849,000",
       고가: "88,249,000",
       저가: "87,630,000",
     },
@@ -154,7 +160,7 @@ export const INCREASE_CLUB_STOKE_ITMES = [
   {
     clubName: "ALT",
     price: {
-      종가: "87,849,000",
+      현재가: "87,849,000",
       고가: "88,249,000",
       저가: "87,630,000",
     },
@@ -162,7 +168,7 @@ export const INCREASE_CLUB_STOKE_ITMES = [
   {
     clubName: "DLC",
     price: {
-      종가: "87,849,000",
+      현재가: "87,849,000",
       고가: "88,249,000",
       저가: "87,630,000",
     },

@@ -21,10 +21,10 @@ const Club = () => {
       </S.AttributeWrap>
 
       {CLUB_TUBLE_ITEMS.map((item, idx) => (
-        <S.TubleWrap key={idx} onClick={() => router.push(`/stoke/${idx}`)}>
+        <S.TubleWrap key={idx} onClick={() => router.push(`/stock/${idx}`)}>
           <S.Text>{idx + 1}</S.Text>
           <S.Text>{item.clubName}</S.Text>
-          <S.Text $color={palette.commit_3}>{item.price.종가}</S.Text>
+          <S.Text $color={palette.commit_3}>{item.price.현재가}</S.Text>
           <S.Text $color={palette.commit_5}>{item.price.고가}</S.Text>
           <S.Text $color={"#B1B4B9"}>{item.price.저가}</S.Text>
         </S.TubleWrap>

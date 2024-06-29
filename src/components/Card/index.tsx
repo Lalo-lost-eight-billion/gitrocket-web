@@ -3,32 +3,37 @@
 import React from "react";
 import Img from "../Img";
 import * as S from "./style";
-import { Column } from "@/styles/Flex";
+import { Column, Row } from "@/styles/Flex";
 
 interface Props {
-  onClick: () => void;
+  onClick?: () => void;
+
   clubName: string;
   clubImage: string;
+  variationRate: string;
   price: {
-    종가: string;
+    현재가: string;
     고가: string;
     저가: string;
   };
 }
 
-type priceType = "종가" | "고가" | "저가";
+type priceType = "현재가" | "고가" | "저가";
 
 const Card = ({
   onClick,
   clubName,
   clubImage = "/images/minoru.png",
+  variationRate,
   price,
 }: Props) => {
-  const priceList: priceType[] = ["종가", "고가", "저가"];
+  const priceList: priceType[] = ["현재가", "고가", "저가"];
 
   return (
     <S.CardBox onClick={onClick}>
-      <S.Name>{clubName}</S.Name>
+      <S.Name $isUp={variationRate[0] === "+"}>
+        {clubName} <span>{variationRate}</span>
+      </S.Name>
 
       <S.ImageWrap>
         <Img
@@ -45,12 +50,13 @@ const Card = ({
         $width={"100%"}
         $height={"50%"}
         $rowGap={"7px"}
-        $padding={"15px 17px"}
+        $padding={"12px 17px"}
       >
         {priceList.map((item, idx) => (
-          <S.Text key={idx} $priceType={item}>
-            {item} <span>{price[item]}</span>
-          </S.Text>
+          <Row $alignItems={"center"} key={idx}>
+            <S.PriceType>{item}</S.PriceType>
+            <S.Price $priceType={item}>{price[item]}</S.Price>
+          </Row>
         ))}
       </Column>
     </S.CardBox>

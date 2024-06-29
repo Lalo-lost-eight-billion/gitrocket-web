@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 
 export const CardBox = styled.div`
   width: 224px;
-  height: 170px;
+  height: 175px;
 
   border-radius: 20px;
   background-color: #fff;
@@ -24,7 +24,7 @@ export const StyledImage = css`
   object-fit: cover;
 `;
 
-export const Name = styled.p`
+export const Name = styled.p<{ $isUp: boolean }>`
   font-size: 18px;
   font-family: "Pretendard-Bold" !important;
   color: ${palette.commit_1};
@@ -34,6 +34,12 @@ export const Name = styled.p`
   left: 20px;
 
   z-index: 1;
+
+  span {
+    font-size: 15px;
+    font-family: "Pretendard-SemiBold" !important;
+    color: ${({ $isUp }) => ($isUp ? "red" : "blue")};
+  }
 `;
 
 export const ImageFilter = styled.div`
@@ -47,25 +53,26 @@ export const ImageFilter = styled.div`
   background-color: rgba(0, 0, 0, 0.5);
 `;
 
-export const Text = styled.p<{ $priceType: "종가" | "고가" | "저가" }>`
+export const PriceType = styled.p`
   font-size: 14px;
+  width: 38px;
   font-family: "Pretendard-SemiBold" !important;
+`;
 
-  span {
-    font-family: "Pretendard-SemiBold" !important;
-    padding-left: 8px;
-    color: ${({ $priceType }) => {
-      let textColor = "B1B4B9";
+export const Price = styled.p<{ $priceType: "현재가" | "고가" | "저가" }>`
+  font-family: "Pretendard-SemiBold" !important;
+  padding-left: 8px;
+  color: ${({ $priceType }) => {
+    let textColor = "B1B4B9";
 
-      if ($priceType === "고가") {
-        textColor = palette.commit_5;
-      }
+    if ($priceType === "고가") {
+      textColor = palette.commit_5;
+    }
 
-      if ($priceType === "종가") {
-        textColor = palette.commit_3;
-      }
+    if ($priceType === "현재가") {
+      textColor = palette.commit_3;
+    }
 
-      return textColor;
-    }};
-  }
+    return textColor;
+  }};
 `;
