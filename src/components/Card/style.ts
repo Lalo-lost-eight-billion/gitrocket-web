@@ -62,8 +62,9 @@ export const PriceType = styled.p`
 export const Price = styled.p<{ $priceType: "present" | "high" | "low" }>`
   font-family: "Pretendard-SemiBold" !important;
   padding-left: 8px;
+
   color: ${({ $priceType }) => {
-    let textColor = "B1B4B9";
+    let textColor = "#B1B4B9";
 
     if ($priceType === "high") {
       textColor = palette.commit_5;
