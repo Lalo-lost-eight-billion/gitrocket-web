@@ -38,7 +38,7 @@ export const Name = styled.p<{ $isUp: boolean }>`
   span {
     font-size: 15px;
     font-family: "Pretendard-SemiBold" !important;
-    color: ${({ $isUp }) => ($isUp ? "red" : "blue")};
+    color: ${({ $isUp }) => ($isUp ? palette.commit_4 : "#B1B4B9")};
   }
 `;
 

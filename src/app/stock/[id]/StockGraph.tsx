@@ -4,6 +4,7 @@ import React from "react";
 import ReactApexChart from "react-apexcharts";
 import * as S from "./style";
 import { STOCK_DATA_ITEMS } from "./constant";
+import { palette } from "@/styles/palette";
 
 const StockGraph = ({ clubName }: { clubName: string }) => {
   const STOKE_GRAPH_OPTIONS: ApexCharts.ApexOptions = {
@@ -21,6 +22,14 @@ const StockGraph = ({ clubName }: { clubName: string }) => {
     yaxis: {
       tooltip: {
         enabled: true,
+      },
+    },
+    plotOptions: {
+      candlestick: {
+        colors: {
+          upward: palette.commit_3,
+          downward: "#B1B4B9",
+        },
       },
     },
   };

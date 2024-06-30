@@ -66,11 +66,15 @@ const PresentMarketPrice = ({
 
   return (
     <Column $rowGap={"15px"}>
-      <Title
-        content={props.presentPrice}
-        size={"32px"}
-        color={numericVariationRate > 0 ? palette.commit_4 : "#B1B4B9"}
-      />
+      <Row $alignItems={"flex-end"} $columnGap={"5px"}>
+        <Title
+          content={props.presentPrice}
+          size={"32px"}
+          color={numericVariationRate > 0 ? palette.commit_4 : "#B1B4B9"}
+        />
+        <Title content="코인" size={"18px"} />
+      </Row>
+
       <S.VariationRateText $isUp={numericVariationRate > 0}>
         {props.variationRate} ({variationPrice.toLocaleString()})
       </S.VariationRateText>
