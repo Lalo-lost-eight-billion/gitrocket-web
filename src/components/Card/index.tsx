@@ -11,26 +11,26 @@ interface Props {
   clubName: string;
   clubImage: string;
   variationRate: string;
-  price: {
+  coin: {
     present: string;
     high: string;
     low: string;
   };
 }
 
-type priceType = "present" | "high" | "low";
+type coinType = "present" | "high" | "low";
 
 const Card = ({
   onClick,
   clubName,
   clubImage = "/images/minoru.png",
   variationRate,
-  price,
+  coin,
 }: Props) => {
-  const priceList = ["현재가", "고가", "저가"];
+  const coinList = ["현재가", "고가", "저가"];
 
-  const convertPriceTypeToEnglish = (price: string) => {
-    switch (price) {
+  const convertCoinTypeToEnglish = (coin: string) => {
+    switch (coin) {
       case "현재가":
         return "present";
       case "고가":
@@ -65,12 +65,12 @@ const Card = ({
         $rowGap={"7px"}
         $padding={"12px 17px"}
       >
-        {priceList.map((item, idx) => (
+        {coinList.map((item, idx) => (
           <Row $alignItems={"center"} key={idx}>
-            <S.PriceType>{item}</S.PriceType>
-            <S.Price $priceType={convertPriceTypeToEnglish(item) as priceType}>
-              {price[convertPriceTypeToEnglish(item) as priceType]}
-            </S.Price>
+            <S.CoinType>{item}</S.CoinType>
+            <S.Coin $coinType={convertCoinTypeToEnglish(item) as coinType}>
+              {coin[convertCoinTypeToEnglish(item) as coinType]}
+            </S.Coin>
           </Row>
         ))}
       </Column>

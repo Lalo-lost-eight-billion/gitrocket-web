@@ -14,7 +14,7 @@ export const CLUB_TUBLE_ITEMS: Omit<
 >[] = [
   {
     clubName: "B1ND",
-    price: {
+    coin: {
       present: "87,849,000",
       high: "88,249,000",
       low: "87,630,000",
@@ -22,7 +22,7 @@ export const CLUB_TUBLE_ITEMS: Omit<
   },
   {
     clubName: "CNS",
-    price: {
+    coin: {
       present: "87,849,000",
       high: "88,249,000",
       low: "87,630,000",
@@ -30,7 +30,7 @@ export const CLUB_TUBLE_ITEMS: Omit<
   },
   {
     clubName: "DUCAMI",
-    price: {
+    coin: {
       present: "87,849,000",
       high: "88,249,000",
       low: "87,630,000",
@@ -38,7 +38,7 @@ export const CLUB_TUBLE_ITEMS: Omit<
   },
   {
     clubName: "ALT",
-    price: {
+    coin: {
       present: "87,849,000",
       high: "88,249,000",
       low: "87,630,000",
@@ -46,7 +46,7 @@ export const CLUB_TUBLE_ITEMS: Omit<
   },
   {
     clubName: "DLC",
-    price: {
+    coin: {
       present: "87,849,000",
       high: "88,249,000",
       low: "87,630,000",
@@ -54,7 +54,7 @@ export const CLUB_TUBLE_ITEMS: Omit<
   },
   {
     clubName: "모디",
-    price: {
+    coin: {
       present: "87,849,000",
       high: "88,249,000",
       low: "87,630,000",
@@ -62,7 +62,7 @@ export const CLUB_TUBLE_ITEMS: Omit<
   },
   {
     clubName: "inD",
-    price: {
+    coin: {
       present: "87,849,000",
       high: "88,249,000",
       low: "87,630,000",
@@ -70,7 +70,7 @@ export const CLUB_TUBLE_ITEMS: Omit<
   },
   {
     clubName: "Connect",
-    price: {
+    coin: {
       present: "87,849,000",
       high: "88,249,000",
       low: "87,630,000",
@@ -78,7 +78,7 @@ export const CLUB_TUBLE_ITEMS: Omit<
   },
   {
     clubName: "8bit",
-    price: {
+    coin: {
       present: "87,849,000",
       high: "88,249,000",
       low: "87,630,000",
@@ -86,7 +86,7 @@ export const CLUB_TUBLE_ITEMS: Omit<
   },
   {
     clubName: "삼디",
-    price: {
+    coin: {
       present: "87,849,000",
       high: "88,249,000",
       low: "87,630,000",
@@ -100,7 +100,7 @@ export const INQUIRED_CLUB_STOCK_ITEMS: Omit<
 >[] = [
   {
     clubName: "B1ND",
-    price: {
+    coin: {
       present: "87,849,000",
       high: "88,249,000",
       low: "87,630,000",
@@ -108,7 +108,7 @@ export const INQUIRED_CLUB_STOCK_ITEMS: Omit<
   },
   {
     clubName: "CNS",
-    price: {
+    coin: {
       present: "87,849,000",
       high: "88,249,000",
       low: "87,630,000",
@@ -116,7 +116,7 @@ export const INQUIRED_CLUB_STOCK_ITEMS: Omit<
   },
   {
     clubName: "DUCAMI",
-    price: {
+    coin: {
       present: "87,849,000",
       high: "88,249,000",
       low: "87,630,000",
@@ -124,7 +124,7 @@ export const INQUIRED_CLUB_STOCK_ITEMS: Omit<
   },
   {
     clubName: "ALT",
-    price: {
+    coin: {
       present: "87,849,000",
       high: "88,249,000",
       low: "87,630,000",
@@ -132,7 +132,7 @@ export const INQUIRED_CLUB_STOCK_ITEMS: Omit<
   },
   {
     clubName: "DLC",
-    price: {
+    coin: {
       present: "87,849,000",
       high: "88,249,000",
       low: "87,630,000",
@@ -146,7 +146,7 @@ export const INCREASE_CLUB_STOCK_ITMES: Omit<
 >[] = [
   {
     clubName: "B1ND",
-    price: {
+    coin: {
       present: "87,849,000",
       high: "88,249,000",
       low: "87,630,000",
@@ -154,7 +154,7 @@ export const INCREASE_CLUB_STOCK_ITMES: Omit<
   },
   {
     clubName: "CNS",
-    price: {
+    coin: {
       present: "87,849,000",
       high: "88,249,000",
       low: "87,630,000",
@@ -162,7 +162,7 @@ export const INCREASE_CLUB_STOCK_ITMES: Omit<
   },
   {
     clubName: "DUCAMI",
-    price: {
+    coin: {
       present: "87,849,000",
       high: "88,249,000",
       low: "87,630,000",
@@ -170,7 +170,7 @@ export const INCREASE_CLUB_STOCK_ITMES: Omit<
   },
   {
     clubName: "ALT",
-    price: {
+    coin: {
       present: "87,849,000",
       high: "88,249,000",
       low: "87,630,000",
@@ -178,7 +178,7 @@ export const INCREASE_CLUB_STOCK_ITMES: Omit<
   },
   {
     clubName: "DLC",
-    price: {
+    coin: {
       present: "87,849,000",
       high: "88,249,000",
       low: "87,630,000",

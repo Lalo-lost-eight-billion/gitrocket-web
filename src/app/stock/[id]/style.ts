@@ -20,7 +20,7 @@ export const HeaderWrap = styled.div`
   ${Flex({ $alignItems: "center" })}
 `;
 
-export const MarketPriceWrap = styled.div`
+export const MarketCoinWrap = styled.div`
   width: 100%;
   height: 88px;
 
@@ -50,7 +50,7 @@ export const Line = styled.div`
   background-color: #ddd;
 `;
 
-export const StatusPrice = styled.p<{ $color: CSSProperties["color"] }>`
+export const StatusCoin = styled.p<{ $color: CSSProperties["color"] }>`
   font-size: 15px;
   font-family: "Pretendard-Semibold" !important;
   color: ${({ $color }) => $color};

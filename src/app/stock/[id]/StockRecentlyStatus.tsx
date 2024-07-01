@@ -10,9 +10,9 @@ import { StockItemType } from "@/types/stock/stock.type";
 
 const StockRecentlyStatus = ({
   variationRate,
-  price,
+  coin,
 }: Omit<StockItemType, "clubName" | "clubImage">) => {
-  const { present, high, low } = price;
+  const { present, high, low } = coin;
 
   return (
     <Row
@@ -21,26 +21,23 @@ const StockRecentlyStatus = ({
       $padding={"10px 0 0 0"}
       $justifyContent={"space-between"}
     >
-      <PresentMarketPrice
-        presentPrice={present}
-        variationRate={variationRate}
-      />
+      <PresentMarketcoin presentcoin={present} variationRate={variationRate} />
 
       <Row $alignItems={"center"} $columnGap={"25px"}>
         <StockStatus>
           <StockStatus.Item
             title={"고가"}
-            price={high}
+            coin={high}
             color={palette.commit_5}
           />
           <S.Line />
-          <StockStatus.Item title={"저가"} price={low} color={"#B1B4B9"} />
+          <StockStatus.Item title={"저가"} coin={low} color={"#B1B4B9"} />
         </StockStatus>
 
         <StockStatus>
-          <StockStatus.Item title={"거래량(24h)"} price={"3,086.123"} />
+          <StockStatus.Item title={"거래량(24h)"} coin={"3,086.123"} />
           <S.Line />
-          <StockStatus.Item title={"거래대금(24H)"} price={"266,946,609,885"} />
+          <StockStatus.Item title={"거래대금(24H)"} coin={"266,946,609,885"} />
         </StockStatus>
       </Row>
     </Row>
@@ -49,26 +46,26 @@ const StockRecentlyStatus = ({
 
 export default StockRecentlyStatus;
 
-const PresentMarketPrice = ({
+const PresentMarketcoin = ({
   ...props
 }: {
-  presentPrice: string;
+  presentcoin: string;
   variationRate: string;
 }) => {
-  const { presentPrice, variationRate } = props;
+  const { presentcoin, variationRate } = props;
 
   // 가격과 변동률을 숫자로 변환
-  const numericPresentPrice = Number(presentPrice.replaceAll(",", ""));
+  const numericPresentcoin = Number(presentcoin.replaceAll(",", ""));
   const numericVariationRate = Number(variationRate.replace("%", ""));
 
   // 변동된 가격 계산
-  const variationPrice = (numericPresentPrice * numericVariationRate) / 100;
+  const variationcoin = (numericPresentcoin * numericVariationRate) / 100;
 
   return (
     <Column $rowGap={"15px"}>
       <Row $alignItems={"flex-end"} $columnGap={"5px"}>
         <Title
-          content={props.presentPrice}
+          content={props.presentcoin}
           size={"32px"}
           color={numericVariationRate > 0 ? palette.commit_4 : "#B1B4B9"}
         />
@@ -76,7 +73,7 @@ const PresentMarketPrice = ({
       </Row>
 
       <S.VariationRateText $isUp={numericVariationRate > 0}>
-        {props.variationRate} ({variationPrice.toLocaleString()})
+        {props.variationRate} ({variationcoin.toLocaleString()})
       </S.VariationRateText>
     </Column>
   );
@@ -91,7 +88,7 @@ const StockStatusItem = ({
   ...props
 }: {
   title: string;
-  price: string;
+  coin: string;
   color?: CSSProperties["color"];
 }) => {
   return (
@@ -103,7 +100,7 @@ const StockStatusItem = ({
       $justifyContent={"space-between"}
     >
       <S.StatusTitle>{props.title}</S.StatusTitle>
-      <S.StatusPrice $color={color}>{props.price}</S.StatusPrice>
+      <S.StatusCoin $color={color}>{props.coin}</S.StatusCoin>
     </Row>
   );
 };

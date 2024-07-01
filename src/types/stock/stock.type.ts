@@ -2,10 +2,10 @@ export interface StockItemType {
   clubName: string;
   clubImage: string;
   variationRate: string;
-  price: PriceType;
+  coin: StockCoinType;
 }
 
-export interface PriceType {
+export interface StockCoinType {
   present: string;
   high: string;
   low: string;

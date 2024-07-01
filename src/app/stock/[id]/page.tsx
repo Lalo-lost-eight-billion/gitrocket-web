@@ -19,7 +19,7 @@ const Stock = () => {
 
       <StockRecentlyStatus
         variationRate={stokeItem?.variationRate!}
-        price={stokeItem?.price!}
+        coin={stokeItem?.coin!}
       />
 
       <Row $width={"100%"} $columnGap={"20px"}>

@@ -5,7 +5,7 @@ export const REGISTED_CLUB_STOCK_ITMES: StockItemType[] = [
     clubName: "B1ND",
     clubImage: "/images/b1nd.png",
     variationRate: "+3.00%",
-    price: {
+    coin: {
       present: "87,849,000",
       high: "88,249,000",
       low: "87,630,000",
@@ -15,7 +15,7 @@ export const REGISTED_CLUB_STOCK_ITMES: StockItemType[] = [
     clubName: "CNS",
     clubImage: "/images/cns.png",
     variationRate: "+2.37%",
-    price: {
+    coin: {
       present: "87,849,000",
       high: "88,249,000",
       low: "87,630,000",
@@ -25,7 +25,7 @@ export const REGISTED_CLUB_STOCK_ITMES: StockItemType[] = [
     clubName: "DUCAMI",
     clubImage: "/images/ducami.png",
     variationRate: "+1.10%",
-    price: {
+    coin: {
       present: "87,849,000",
       high: "88,249,000",
       low: "87,630,000",
@@ -35,7 +35,7 @@ export const REGISTED_CLUB_STOCK_ITMES: StockItemType[] = [
     clubName: "ALT",
     clubImage: "/images/alt.png",
     variationRate: "+0.54%",
-    price: {
+    coin: {
       present: "87,849,000",
       high: "88,249,000",
       low: "87,630,000",
@@ -45,7 +45,7 @@ export const REGISTED_CLUB_STOCK_ITMES: StockItemType[] = [
     clubName: "DLC",
     clubImage: "/images/ralo.jpeg",
     variationRate: "+0.44%",
-    price: {
+    coin: {
       present: "87,849,000",
       high: "88,249,000",
       low: "87,630,000",
@@ -55,7 +55,7 @@ export const REGISTED_CLUB_STOCK_ITMES: StockItemType[] = [
     clubName: "모디",
     clubImage: "/images/modi.png",
     variationRate: "-1.15%",
-    price: {
+    coin: {
       present: "87,849,000",
       high: "88,249,000",
       low: "87,630,000",
@@ -65,7 +65,7 @@ export const REGISTED_CLUB_STOCK_ITMES: StockItemType[] = [
     clubName: "inD",
     clubImage: "/images/ralo.jpeg",
     variationRate: "-0.21%",
-    price: {
+    coin: {
       present: "87,849,000",
       high: "88,249,000",
       low: "87,630,000",
@@ -75,7 +75,7 @@ export const REGISTED_CLUB_STOCK_ITMES: StockItemType[] = [
     clubName: "Connect",
     clubImage: "/images/ralo.jpeg",
     variationRate: "-0.96%",
-    price: {
+    coin: {
       present: "87,849,000",
       high: "88,249,000",
       low: "87,630,000",
@@ -85,7 +85,7 @@ export const REGISTED_CLUB_STOCK_ITMES: StockItemType[] = [
     clubName: "8bit",
     variationRate: "-1.05%",
     clubImage: "/images/ralo.jpeg",
-    price: {
+    coin: {
       present: "87,849,000",
       high: "88,249,000",
       low: "87,630,000",
@@ -95,7 +95,7 @@ export const REGISTED_CLUB_STOCK_ITMES: StockItemType[] = [
     clubName: "삼디",
     clubImage: "/images/ralo.jpeg",
     variationRate: "-0.10%",
-    price: {
+    coin: {
       present: "87,849,000",
       high: "88,249,000",
       low: "87,630,000",
@@ -108,7 +108,7 @@ export const INQUIRED_CLUB_STOCK_ITEMS: StockItemType[] = [
     clubName: "B1ND",
     clubImage: "/images/b1nd.png",
     variationRate: "+3.00%",
-    price: {
+    coin: {
       present: "87,849,000",
       high: "88,249,000",
       low: "87,630,000",
@@ -118,7 +118,7 @@ export const INQUIRED_CLUB_STOCK_ITEMS: StockItemType[] = [
     clubName: "CNS",
     clubImage: "/images/cns.png",
     variationRate: "+2.37%",
-    price: {
+    coin: {
       present: "87,849,000",
       high: "88,249,000",
       low: "87,630,000",
@@ -128,7 +128,7 @@ export const INQUIRED_CLUB_STOCK_ITEMS: StockItemType[] = [
     clubName: "DUCAMI",
     clubImage: "/images/ducami.png",
     variationRate: "+1.10%",
-    price: {
+    coin: {
       present: "87,849,000",
       high: "88,249,000",
       low: "87,630,000",
@@ -138,7 +138,7 @@ export const INQUIRED_CLUB_STOCK_ITEMS: StockItemType[] = [
     clubName: "ALT",
     clubImage: "/images/alt.png",
     variationRate: "+0.54%",
-    price: {
+    coin: {
       present: "87,849,000",
       high: "88,249,000",
       low: "87,630,000",
@@ -148,7 +148,7 @@ export const INQUIRED_CLUB_STOCK_ITEMS: StockItemType[] = [
     clubName: "DLC",
     clubImage: "/images/ralo.jpeg",
     variationRate: "+0.44%",
-    price: {
+    coin: {
       present: "87,849,000",
       high: "88,249,000",
       low: "87,630,000",
@@ -161,7 +161,7 @@ export const INCREASED_CLUB_STOCK_ITMES: StockItemType[] = [
     clubName: "B1ND",
     clubImage: "/images/b1nd.png",
     variationRate: "+3.00%",
-    price: {
+    coin: {
       present: "87,849,000",
       high: "88,249,000",
       low: "87,630,000",
@@ -171,7 +171,7 @@ export const INCREASED_CLUB_STOCK_ITMES: StockItemType[] = [
     clubName: "CNS",
     clubImage: "/images/cns.png",
     variationRate: "+2.37%",
-    price: {
+    coin: {
       present: "87,849,000",
       high: "88,249,000",
       low: "87,630,000",
@@ -181,7 +181,7 @@ export const INCREASED_CLUB_STOCK_ITMES: StockItemType[] = [
     clubName: "DUCAMI",
     clubImage: "/images/ducami.png",
     variationRate: "+1.10%",
-    price: {
+    coin: {
       present: "87,849,000",
       high: "88,249,000",
       low: "87,630,000",
@@ -191,7 +191,7 @@ export const INCREASED_CLUB_STOCK_ITMES: StockItemType[] = [
     clubName: "ALT",
     clubImage: "/images/alt.png",
     variationRate: "+0.54%",
-    price: {
+    coin: {
       present: "87,849,000",
       high: "88,249,000",
       low: "87,630,000",
@@ -201,7 +201,7 @@ export const INCREASED_CLUB_STOCK_ITMES: StockItemType[] = [
     clubName: "DLC",
     clubImage: "/images/ralo.jpeg",
     variationRate: "+0.44%",
-    price: {
+    coin: {
       present: "87,849,000",
       high: "88,249,000",
       low: "87,630,000",
@@ -214,7 +214,7 @@ export const DECREASED_CLUB_STOCK_ITMES: StockItemType[] = [
     clubName: "모디",
     clubImage: "/images/modi.png",
     variationRate: "-1.15%",
-    price: {
+    coin: {
       present: "87,849,000",
       high: "88,249,000",
       low: "87,630,000",
@@ -224,7 +224,7 @@ export const DECREASED_CLUB_STOCK_ITMES: StockItemType[] = [
     clubName: "inD",
     clubImage: "/images/ralo.jpeg",
     variationRate: "-0.21%",
-    price: {
+    coin: {
       present: "87,849,000",
       high: "88,249,000",
       low: "87,630,000",
@@ -234,7 +234,7 @@ export const DECREASED_CLUB_STOCK_ITMES: StockItemType[] = [
     clubName: "Connect",
     clubImage: "/images/ralo.jpeg",
     variationRate: "-0.96%",
-    price: {
+    coin: {
       present: "87,849,000",
       high: "88,249,000",
       low: "87,630,000",
@@ -244,7 +244,7 @@ export const DECREASED_CLUB_STOCK_ITMES: StockItemType[] = [
     clubName: "8bit",
     variationRate: "-1.05%",
     clubImage: "/images/ralo.jpeg",
-    price: {
+    coin: {
       present: "87,849,000",
       high: "88,249,000",
       low: "87,630,000",
@@ -254,7 +254,7 @@ export const DECREASED_CLUB_STOCK_ITMES: StockItemType[] = [
     clubName: "삼디",
     clubImage: "/images/ralo.jpeg",
     variationRate: "-0.10%",
-    price: {
+    coin: {
       present: "87,849,000",
       high: "88,249,000",
       low: "87,630,000",

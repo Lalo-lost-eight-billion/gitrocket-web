@@ -53,24 +53,24 @@ export const ImageFilter = styled.div`
   background-color: rgba(0, 0, 0, 0.5);
 `;
 
-export const PriceType = styled.p`
+export const CoinType = styled.p`
   font-size: 14px;
   width: 38px;
   font-family: "Pretendard-SemiBold" !important;
 `;
 
-export const Price = styled.p<{ $priceType: "present" | "high" | "low" }>`
+export const Coin = styled.p<{ $coinType: "present" | "high" | "low" }>`
   font-family: "Pretendard-SemiBold" !important;
   padding-left: 8px;
 
-  color: ${({ $priceType }) => {
+  color: ${({ $coinType }) => {
     let textColor = "#B1B4B9";
 
-    if ($priceType === "high") {
+    if ($coinType === "high") {
       textColor = palette.commit_5;
     }
 
-    if ($priceType === "present") {
+    if ($coinType === "present") {
       textColor = palette.commit_3;
     }
 
