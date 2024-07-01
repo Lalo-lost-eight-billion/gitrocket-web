@@ -31,12 +31,12 @@ const Home = () => {
   );
 };
 
-interface Props {
+interface ClubStockProps {
   router: AppRouterInstance;
   setStokeItem: Dispatch<SetStateAction<StockItemType | null>>;
 }
 
-const RegistedClubStock = ({ router, setStokeItem }: Props) => {
+const RegistedClubStock = ({ router, setStokeItem }: ClubStockProps) => {
   return (
     <Column $width={"100%"} $rowGap={"20px"}>
       <Title content="등록된 동아리 주식을 확인해봐요" />
@@ -62,7 +62,7 @@ const RegistedClubStock = ({ router, setStokeItem }: Props) => {
   );
 };
 
-const InquiredClubStock = ({ router, setStokeItem }: Props) => {
+const InquiredClubStock = ({ router, setStokeItem }: ClubStockProps) => {
   return (
     <Column $width={"100%"} $rowGap={"20px"}>
       <Title content="최근 조회한 동아리 주식이에요" />
@@ -88,7 +88,7 @@ const InquiredClubStock = ({ router, setStokeItem }: Props) => {
   );
 };
 
-const IncreasedClubStock = ({ router, setStokeItem }: Props) => {
+const IncreasedClubStock = ({ router, setStokeItem }: ClubStockProps) => {
   return (
     <Column $width={"100%"} $rowGap={"20px"}>
       <Title content="현재 상승률이 높은 주식들이에요" />
@@ -114,7 +114,7 @@ const IncreasedClubStock = ({ router, setStokeItem }: Props) => {
   );
 };
 
-const DecreasedClubStock = ({ router, setStokeItem }: Props) => {
+const DecreasedClubStock = ({ router, setStokeItem }: ClubStockProps) => {
   return (
     <Column $width={"100%"} $rowGap={"20px"}>
       <Title content="현재 하락율이 높은 주식들이에요" />
