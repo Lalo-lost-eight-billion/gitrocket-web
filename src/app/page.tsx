@@ -3,8 +3,8 @@
 import Card from "@/components/Card";
 import Title from "@/components/Title";
 import {
-  DECREASE_CLUB_STOCK_ITMES,
-  INCREASE_CLUB_STOCK_ITMES,
+  DECREASED_CLUB_STOCK_ITMES,
+  INCREASED_CLUB_STOCK_ITMES,
   INQUIRED_CLUB_STOCK_ITEMS,
   REGISTED_CLUB_STOCK_ITMES,
 } from "@/constants/dummy.constant";
@@ -25,8 +25,8 @@ const Home = () => {
     <Container>
       <RegistedClubStock router={router} setStokeItem={setStokeItem} />
       <InquiredClubStock router={router} setStokeItem={setStokeItem} />
-      <IncreaseClubStock router={router} setStokeItem={setStokeItem} />
-      <DecreaseClubStock router={router} setStokeItem={setStokeItem} />
+      <IncreasedClubStock router={router} setStokeItem={setStokeItem} />
+      <DecreasedClubStock router={router} setStokeItem={setStokeItem} />
     </Container>
   );
 };
@@ -88,7 +88,7 @@ const InquiredClubStock = ({ router, setStokeItem }: Props) => {
   );
 };
 
-const IncreaseClubStock = ({ router, setStokeItem }: Props) => {
+const IncreasedClubStock = ({ router, setStokeItem }: Props) => {
   return (
     <Column $width={"100%"} $rowGap={"20px"}>
       <Title content="현재 상승률이 높은 주식들이에요" />
@@ -99,7 +99,7 @@ const IncreaseClubStock = ({ router, setStokeItem }: Props) => {
         $columnGap={"10px"}
         $rowGap={"20px"}
       >
-        {INCREASE_CLUB_STOCK_ITMES.map((item, idx) => (
+        {INCREASED_CLUB_STOCK_ITMES.map((item, idx) => (
           <Card
             key={idx}
             onClick={() => {
@@ -114,7 +114,7 @@ const IncreaseClubStock = ({ router, setStokeItem }: Props) => {
   );
 };
 
-const DecreaseClubStock = ({ router, setStokeItem }: Props) => {
+const DecreasedClubStock = ({ router, setStokeItem }: Props) => {
   return (
     <Column $width={"100%"} $rowGap={"20px"}>
       <Title content="현재 하락율이 높은 주식들이에요" />
@@ -125,7 +125,7 @@ const DecreaseClubStock = ({ router, setStokeItem }: Props) => {
         $columnGap={"10px"}
         $rowGap={"20px"}
       >
-        {DECREASE_CLUB_STOCK_ITMES.map((item, idx) => (
+        {DECREASED_CLUB_STOCK_ITMES.map((item, idx) => (
           <Card
             key={idx}
             onClick={() => {

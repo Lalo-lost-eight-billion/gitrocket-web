@@ -156,7 +156,7 @@ export const INQUIRED_CLUB_STOCK_ITEMS: StockItemType[] = [
   },
 ] as const;
 
-export const INCREASE_CLUB_STOCK_ITMES: StockItemType[] = [
+export const INCREASED_CLUB_STOCK_ITMES: StockItemType[] = [
   {
     clubName: "B1ND",
     clubImage: "/images/b1nd.png",
@@ -209,7 +209,7 @@ export const INCREASE_CLUB_STOCK_ITMES: StockItemType[] = [
   },
 ] as const;
 
-export const DECREASE_CLUB_STOCK_ITMES: StockItemType[] = [
+export const DECREASED_CLUB_STOCK_ITMES: StockItemType[] = [
   {
     clubName: "모디",
     clubImage: "/images/modi.png",
